@@ -1,6 +1,7 @@
 /* jshint node: true */
-'use strict';
+var EngineAddon = require('ember-engines/lib/engine-addon');
 
-module.exports = {
-  name: 'hello-routable-engine'
-};
+module.exports = EngineAddon.extend({
+  name: 'hello-routable-engine',
+  lazyLoading: false
+});
